@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>404 Error
+    </title>
+</head>
+
+<style>
+    img {
+        opacity: 0.2;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        z-index: -999;
+    }
+
+    .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .errornum {
+        color: rgb(0, 123, 255);
+        text-align: center;
+        font-size: 1000%;
+    }
+
+    .errorname {
+        margin-top: -20px;
+        font-size: 150%;
+        text-align: center;
+        text-transform: uppercase;
+    }
+</style>
+
+<body>
+    <img src="https://192.168.18.2:3000/static/logo.png">
+    <div class="container">
+        <div class="errornum">
+            404
+        </div>
+        <div class="errorname">Page Not Found</div>
+    </div>
+</body>
+
+</html>

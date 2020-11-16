@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f0a8f33bd2.js" crossorigin="anonymous"></script>
+    <title>Canvas</title>
+
+    <style>
+        .container {
+            position: relative;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .board {
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            background-color: wheat;
+            width: 100%;
+            height: 100%;
+            border: 2px solid black;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="navbar-brand">Canvas</div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Dropdown link
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <canvas id="board" class="board"></canvas>
+
+    </div>
+
+
+</body>
+
+</html>
+<script>
+
+    var board = document.getElementById("board");
+    ctx = board.getContext("2d");
+
+    board.addEventListener("mousedown", function (event) {
+        ctx.beginPath();
+
+        ctx.lineWidth = 2;
+        ctx.lineCap = 'round';
+        ctx.strokeStyle = '#c0392b';
+
+        ctx.moveTo(event.screenX - board.offsetLeft, event.screenY - board.offsetTop); // from
+        ctx.lineTo(event.screenX - board.offsetLeft, event.screenY - board.offsetTop); // to
+
+        ctx.stroke();
+
+        console.log(event)
+        if (event.button == 0) board.addEventListener("mousemove", drag);
+    });
+
+    function drag(event) {
+        ctx.beginPath();
+
+        ctx.lineWidth = 2;
+        ctx.lineCap = 'round';
+        ctx.strokeStyle = '#c0392b';
+
+        ctx.moveTo(event.layerX - board.offsetLeft, event.layerY - board.offsetTop); // from
+        ctx.lineTo(event.layerX - board.offsetLeft, event.layerY - board.offsetTop); // to
+
+        ctx.stroke();
+    }
+
+    board.addEventListener("mouseup", function () {
+        board.removeEventListener("mousemove", drag)
+    });
+
+</script>
