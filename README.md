@@ -38,7 +38,7 @@
   * Start PeerJS server using the command “**node run peer.js**”
   * Start Python Flask server using the command “**python3 server.py**”.
 * Android
-  * Extract the zip file in the Android src folder
+  * Extract the zip file in the Android Studio src folder
   * Open the Extracted folder in Android Studio
   * Build and debug the application as per need.
 
