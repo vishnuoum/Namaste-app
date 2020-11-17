@@ -1,6 +1,6 @@
 # Namaste-app
-<p>Post-Covid era is the new normal for all people in the world. Meetings, classes, discussions, paper presentation, etc. will be following online mode. So there is a huge requirement for online video conferencing solutions.So my idea is to create a google meet clone using Python Flask, Node JS, SocketIO, HTML, Bootstrap, Javascript, CSS, JQuery, JQuery UI, WebRTC, and PeerJS.</p>
-<p>The working  of Namaste App, is similar to that of Google Meet.</p>
+<p>Post-Covid era is the new normal for all people in the world. Meetings, classes, discussions, paper presentation, etc. will be following online mode. So there is a huge requirement for online video conferencing solutions.So my idea is to create a google meet clone using Python Flask, Node JS, SocketIO, HTML, Bootstrap, Javascript, CSS, JQuery, JQuery UI, WebRTC, and PeerJS. The working  of Namaste App, is similar to that of Google Meet.</p>
+<p>Note: Android application for Namaste-app is developed using Android Studio. Android users can only launch meeting through this app.</p>
 
 
 **Build Using:**
