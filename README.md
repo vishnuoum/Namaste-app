@@ -15,6 +15,9 @@
 * Bootstrap
 * MySQL
 
+## APK Download Link
+<a href="https://3.84.117.2:3000/download">Click Here to Download APK</a>
+
 
 ## Installation Guide
 
