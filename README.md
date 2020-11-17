@@ -13,6 +13,7 @@
 * JavaScript
 * Jquery
 * Bootstrap
+* MySQL
 
 ## Screenshots
 
@@ -21,3 +22,15 @@
 <br>
 **Sample 2**
 <img src="http://zateart.com/covidchart/samples/sample2.png" style="margin-top:10px">
+
+
+## Installation Guide
+
+* Make sure you use Python 3.x and you have installed NodeJS.
+* Set the present working directory to project’s main file.
+* Install all modules specified in the requirements.txt file using the command “pip install requirements.txt”.
+* Install all modules specified in the package.json file using the command “npm install package.json”.
+* Import the user.sql file into the database using PhpMyAdmin.
+* Make changes to the database credentials specified in Python code to connect to the database. The credentials include database name, username, password, host, etc.
+* Start PeerJS server using the command “node run peer.js”
+* Start Python Flask server using the command “python server.py” (if you only have Python 3.x), or using “python3 server.py” (if you have both Python 3.x and Python 2.x installed in your system).
