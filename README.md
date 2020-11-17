@@ -35,11 +35,11 @@
   * Install all modules specified in the package.json file using the command “**npm install**”.
   * Import the **users.sql** file(in the DB files folder) into the database using PhpMyAdmin.
   * Make changes to the database credentials specified in Python code to connect to the database. The credentials include database name, username, password, host, etc.
-  * Start PeerJS server using the command “**node run peer.js**”
+  * Start PeerJS server using the command “**node run peer.js**”.
   * Start Python Flask server using the command “**python3 server.py**”.
 * Android
-  * Extract the zip file in the Android Studio src folder
-  * Open the Extracted folder in Android Studio
+  * Extract the zip file in the Android Studio src folder.
+  * Open the Extracted folder in Android Studio.
   * Build and debug the application as per need.
 
 
