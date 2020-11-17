@@ -14,7 +14,7 @@ A video conference application built using Python Flask, NodeJS, and PeerJS. It 
 ## Screenshots
 
 **Sample 1**
-<img src="http://zateart.com/covidchart/samples/sample1.png">
+<img src="http://zateart.com/covidchart/samples/sample1.png" style="margin-top:10px">
 <br>
-**Sample 1**
-<img src="http://zateart.com/covidchart/samples/sample2.png">
+**Sample 2**
+<img src="http://zateart.com/covidchart/samples/sample2.png" style="margin-top:10px">
