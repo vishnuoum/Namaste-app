@@ -34,10 +34,10 @@
 ## Screenshots
 
 **Sample 1**
-<img src="http://zateart.com/covidchart/samples/sample1.png" style="margin-top:20px">
+<img src="http://zateart.com/covidchart/samples/sample1.png" >
 <br>
 **Sample 2**
-<img src="http://zateart.com/covidchart/samples/sample2.png" style="margin-top:20px">
+<img src="http://zateart.com/covidchart/samples/sample2.png">
 
 
 
