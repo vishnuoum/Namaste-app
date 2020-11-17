@@ -12,5 +12,4 @@ A video conference application built using Python Flask, NodeJS, and PeerJS. It 
 * Jquery
 
 ## Screenshots
-<img src="https://hosting.photobucket.com/images/i/covid19breakthechain/sample2.png">
 
