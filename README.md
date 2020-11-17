@@ -15,6 +15,11 @@
 * Bootstrap
 * MySQL
 
+## Features
+* Video Conferencing Capability
+* Real-time chat
+* Profanity filtering
+
 ## Demo Link
 <a href="https://3.84.117.2:3000">View Demo</a>
 
