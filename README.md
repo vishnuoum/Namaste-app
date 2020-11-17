@@ -33,7 +33,7 @@
   * Set the present working directory to Namaste-app(Server files) folder.
   * Install all modules specified in the requirements.txt file using the command “**pip3 install requirements.txt**”.
   * Install all modules specified in the package.json file using the command “**npm install**”.
-  * Import the user.sql file into the database using PhpMyAdmin.
+  * Import the **users.sql** file in the DB files folder into the database using PhpMyAdmin.
   * Make changes to the database credentials specified in Python code to connect to the database. The credentials include database name, username, password, host, etc.
   * Start PeerJS server using the command “**node run peer.js**”
   * Start Python Flask server using the command “**python3 server.py**”.
