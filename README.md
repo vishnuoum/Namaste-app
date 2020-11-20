@@ -27,7 +27,7 @@
 <a href="https://3.84.117.2:3000/download">Click Here to Download APK</a>
 
 ## Demo Video
-<a href="https://youtu.be/p8UZNiV0TBo">Click here to view the video</a>
+<a href="https://youtu.be/HXpPAQSfSv8">Click here to view the video</a>
 
 ## Deployment Video
 <a href="https://youtu.be/cgK_SBxJt3o">Click here to view the video</a>
