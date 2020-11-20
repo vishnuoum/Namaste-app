@@ -20,7 +20,7 @@ username = 'root'
 password = ''
 database = 'namaste-app'
 
-myconn = pymysql.connect( host=hostname, user=username, password=password, db=database )
+myconn = pymysql.connect( host=hostname, user=username, password=password, db=database,port=3306 )
 conn = myconn.cursor()
 
 
@@ -92,14 +92,15 @@ def validate():
 # registering
 @app.route('/register', methods=["POST"])
 def register():
+    print("signup")
     try:
-        conn.execute("Insert ito users(id,name,tel.mail,pass) Values(NULL, '{}', '{}', '{}', sha1=('{}'))".format(request.form.get("name"),request.form.get("tel"),request.form.get("mail"),request.form.get("pass")))
-        conn.commit()
+        conn.execute("Insert into users(id,name,tel,mail,pass) Values(NULL, '{}', '{}', '{}', sha1('{}'))".format(request.form.get("name"),request.form.get("tel"),request.form.get("mail"),request.form.get("pass")))
+        myconn.commit()
         response=make_response("done")
-        response.set_cookie("acc",hashlib.sha1(request.form.get("tel")).hexdigest())
+        response.set_cookie("acc",hashlib.sha1(request.form.get("tel").encode()).hexdigest())
         return response
-    except:
-        print("error")
+    except Exception as ex:
+        print("error",ex)
         return "error"
 
 
@@ -208,4 +209,4 @@ def socketDisconnect():
 if __name__ == '__main__':
     # socketio.run(app, debug=True,host="192.168.42.229")
     profanity.load_censor_words()
-    socketio.run(app, debug=True,port=3000, keyfile='key.pem', certfile='cert.pem',host="192.168.18.2")
+    socketio.run(app, debug=True,port=3000, keyfile='key.pem', certfile='cert.pem',host="0.0.0.0")
