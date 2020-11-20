@@ -29,6 +29,8 @@
 ## Demo Video
 <a href="https://youtu.be/p8UZNiV0TBo">Click here to view the video</a>
 
+## Deployment Video
+<a href="https://youtu.be/cgK_SBxJt3o">Click here to view the video</a>
 
 ## Usage Guide
 * Server side
