@@ -35,7 +35,7 @@
 ## Usage Guide
 * Server side
   * Make sure you use Python 3.x and you have installed NodeJS.
-  * Set the present working directory to Namaste-app(Server files) folder.
+  * Set the present working directory to "**Namaste-app(Server files)**" folder.
   * Install all modules specified in the requirements.txt file using the command “**pip3 install requirements.txt**”.
   * Install all modules specified in the package.json file using the command “**npm install**”.
   * Import the **users.sql** file(in the DB files folder) into the database using PhpMyAdmin.
