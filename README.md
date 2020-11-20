@@ -46,7 +46,7 @@
   * Extract the zip file in the Android Studio src folder.
   * Open the Extracted folder in Android Studio.
   * Build and debug the application as per need.
-  * If you need to connect the application to local server, change the the IP address in the **loadweb** function call and IP address in the **shouldOverrideUrlLoading** function to your server's local ip address.
+  * If you need to connect the application to local server, change the the IP address in the **loadweb** function call and IP address in the **shouldOverrideUrlLoading** function to your server's local IP address.
 
 
 ## Screenshots
