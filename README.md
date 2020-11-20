@@ -26,6 +26,9 @@
 ## APK Download Link
 <a href="https://3.84.117.2:3000/download">Click Here to Download APK</a>
 
+## Demo Video
+<a href="https://youtu.be/p8UZNiV0TBo">Click here to view the video</a>
+
 
 ## Usage Guide
 * Server side
@@ -50,6 +53,7 @@
 <br>
 **Sample 2**
 <img src="http://zateart.com/covidchart/samples/sample2.png">
+
 
 
 
