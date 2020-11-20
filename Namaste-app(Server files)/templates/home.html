@@ -143,15 +143,8 @@
 
         $('#urlModal').modal('hide')
 
-        if (url.includes("https://3.84.117.2:3000")) window.location.href = url;
+        window.location.href = url;
 
-        else {
-            swal.fire({
-                icon: "error",
-                title: "Oops",
-                text: "Wrong meeting url"
-            })
-        }
 
 
 
