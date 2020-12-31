@@ -31,18 +31,6 @@ Namaste App also offers a real time chat feature using socket programming. Socke
 <p>A self signed SSL is added certificate to make the application secure else the browser does not allow us to give permission for the application to access camera and audio.</p>
 
 
-## Demo Link
-<a href="https://3.84.117.2:3000">View Demo</a>
-
-## APK Download Link
-<a href="https://3.84.117.2:3000/download">Click Here to Download APK</a>
-
-## Demo Video
-<a href="https://youtu.be/HXpPAQSfSv8">Click here to view the video</a>
-
-## Deployment Video
-<a href="https://youtu.be/cgK_SBxJt3o">Click here to view the video</a>
-
 ## Usage Guide
 * Server side
   * Make sure you use Python 3.x and you have installed NodeJS.
